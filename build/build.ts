@@ -120,46 +120,51 @@ async function updateREADME(_path: string, text: string) {
 }
 
 async function json2Readme(data: Root) {
-  const headerFormat = `# {{title}}
-> {{description}}`
-  const dateFormat = `### 第 {{id}} 期 - {{title}}`;
-  const dataItemFormat = `- [{{name}} - {{author.person}}]({{url}})`;
+//   const headerFormat = `# {{title}}
+// > {{description}}`
+//   const dateFormat = `### 第 {{id}} 期 - {{title}}`;
+//   const dataItemFormat = `- [{{name}} - {{author.person}}]({{url}})`;
 
-  const header = doreamon.string.format(headerFormat, data, { start: '{{', end: '}}' });
+//   const header = doreamon.string.format(headerFormat, data, { start: '{{', end: '}}' });
   const groups = data.data.data.sort((a, b) => {
     return +new Date(b.createdAt) - +new Date(a.createdAt);
   });
 
-  // logger.debug('Found Groups:', groups);
+  // // logger.debug('Found Groups:', groups);
 
-  const content = groups.map((group) => {
-    // logger.debug('Found Date:', group);
-    const title = doreamon.string.format(dateFormat, group, { start: '{{', end: '}}' });
-    const items = [
-      ...group.content.top.data,
-      ...group.content.article.data
-    ].map(item => {
-      // logger.debug(`item:`, item);
-      const mainText = doreamon.string.format(
-        dataItemFormat, 
-        item,
-        {
-        start: '{{', end: '}}',
-      });
+  // const content = groups.map((group) => {
+  //   // logger.debug('Found Date:', group);
+  //   const title = doreamon.string.format(dateFormat, group, { start: '{{', end: '}}' });
+  //   const items = [
+  //     ...group.content.top.data,
+  //     ...group.content.article.data
+  //   ].map(item => {
+  //     // logger.debug(`item:`, item);
+  //     const mainText = doreamon.string.format(
+  //       dataItemFormat, 
+  //       item,
+  //       {
+  //       start: '{{', end: '}}',
+  //     });
 
-      return mainText;
-    });
+  //     return mainText;
+  //   });
 
-    return [
-      title,
-      items.join('\n'),
-    ].join('\n');
-  }).join('\n\n');
+  //   return [
+  //     title,
+  //     items.join('\n'),
+  //   ].join('\n');
+  // }).join('\n\n');
 
-  return [
-    header,
-    content
-  ].join('\n\n');
+  // return [
+  //   header,
+  //   content
+  // ].join('\n\n');
+
+  return `## 周刊
+${groups.map(group => {
+  return `- [第 ${group.id} 期 - ${group.title}](https://github.com/webafe/BAFE-Weekly/blob/master/src/${group.createdAt.replace('.', '-')}.md)`;
+})}`;
 }
 
 async function onError(error) {
