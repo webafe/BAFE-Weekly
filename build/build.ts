@@ -120,12 +120,12 @@ async function updateREADME(_path: string, text: string) {
 }
 
 async function json2Readme(data: Root) {
-//   const headerFormat = `# {{title}}
-// > {{description}}`
+  const headerFormat = `# {{title}}
+> {{description}}`
 //   const dateFormat = `### 第 {{id}} 期 - {{title}}`;
 //   const dataItemFormat = `- [{{name}} - {{author.person}}]({{url}})`;
 
-//   const header = doreamon.string.format(headerFormat, data, { start: '{{', end: '}}' });
+  const header = doreamon.string.format(headerFormat, data, { start: '{{', end: '}}' });
   const groups = data.data.data.sort((a, b) => {
     return +new Date(b.createdAt) - +new Date(a.createdAt);
   });
@@ -161,7 +161,9 @@ async function json2Readme(data: Root) {
   //   content
   // ].join('\n\n');
 
-  return `## 周刊
+  return `${header}
+  
+## 周刊
 ${groups.map(group => {
   return `- [第 ${group.id} 期 - ${group.title}](https://github.com/webafe/BAFE-Weekly/blob/master/src/${group.createdAt.replace('.', '-')}.md)`;
 })}`;
