@@ -1,0 +1,144 @@
+{
+  "title": "前端观察",
+  "description": "一步一步向前",
+  "data": {
+    "total": 1,
+    "data": [
+      {
+        "id": 1,
+        "title": "React 入门儿",
+        "createdAt": "2020.12.14",
+        "editor": "Zero",
+        "content": {
+          "top": {
+            "title": "🔥 本周置顶",
+            "data": [
+              {
+                "name": "React 入门儿",
+                "url": "https://mp.weixin.qq.com/s/OBE1dIF7QSgRuaAkwaFwxQ",
+                "author": {
+                  "platform": "微信",
+                  "column": "凹凸实验室",
+                  "person": "风魔小次郎"
+                },
+                "summary": "从原理层面探究 React 是如何工作的",
+                "tags": [
+                  "React",
+                  "Fiber"
+                ]
+              }
+            ]
+          },
+          "article": {
+            "title": "📘 技术文章",
+            "data": [
+              {
+                "name": "构建下一代 HTTP API",
+                "url": "https://mp.weixin.qq.com/s/zf0GFgFrn2NLqOCe2mrRew",
+                "author": {
+                  "platform": "微信",
+                  "column": "程序人生",
+                  "person": "陈小天"
+                },
+                "summary": "全方位重新思考如何构建好的 API，包括设计友好、类型安全、数据模拟、接口安全、SDK 等",
+                "tags": [
+                  "API",
+                  "OpenAPI"
+                ]
+              },
+              {
+                "name": "GraphQL是API的未来，但它并非银弹",
+                "url": "https://mp.weixin.qq.com/s/ei5IgDc3j8ezt0tTAb-N3g",
+                "author": {
+                  "platform": "微信",
+                  "column": "InfoQ",
+                  "person": "平川（译）"
+                },
+                "summary": "从 8 个方面介绍了 GraphQL 相比与 RESTful 的优势",
+                "tags": [
+                  "GraphQL"
+                ]
+              },
+              {
+                "name": "腾讯文档 SSR 实践",
+                "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649755178&idx=1&sn=a8aa5df01b4524890f0f044b8e3b8a38&scene=21#wechat_redirect",
+                "author": {
+                  "platform": "微信",
+                  "column": "腾讯技术工程",
+                  "person": "sigmaliu"
+                },
+                "summary": "不仅仅是 SSR，内容相当丰满，涉及 Node、React 组件、性能、网络、docker 镜像 、云上部署、灰度和发布等",
+                "tags": [
+                  "SSR"
+                ]
+              },
+              {
+                "name": "Chrome浏览器 Referrer-Policy 默认值变更",
+                "url": "https://mp.weixin.qq.com/s/8-NgM-d3mbS2l710OqlRuw",
+                "author": {
+                  "platform": "微信",
+                  "column": "前端早读课",
+                  "person": "alibabaf2e"
+                },
+                "summary": "在Chrome 85中，有个很重要的变化：将Referrer-Policy默认值从no-referrer-when-downgrade改为strict-origin-when-cross-origin，它会对埋点、网站分析等功能造成影响。本文会详细介绍这个变化，文章分为以下几个部分：前置知识、变化原因、影响范围、处理方案。",
+                "tags": [
+                  "Chrome"
+                ]
+              }
+            ]
+          },
+          "library": {
+            "title": "🛠 工具类库",
+            "data": [
+              {
+                "name": "kpc",
+                "url": "https://github.com/ksc-fe/kpc",
+                "description": "金山云企业级 UI 框架，同时支持 React、Vue、Angular",
+                "language": "JavaScript",
+                "tags": [
+                  "组件库"
+                ]
+              },
+              {
+                "name": "wmr",
+                "url": "https://github.com/preactjs/wmr",
+                "description": "All-in-One 企业级前端应用开发工具",
+                "language": "JavaScript",
+                "tags": [
+                  "开发工具"
+                ]
+              },
+              {
+                "name": "sql.js",
+                "url": "https://github.com/sql-js/sql.js",
+                "description": "在浏览器中操作 SQLite",
+                "language": "JavaScript",
+                "tags": [
+                  "开发工具"
+                ]
+              },
+              {
+                "name": "budibase",
+                "url": "https://github.com/Budibase/budibase",
+                "description": "开源的 Low-Code 开发平台",
+                "language": "JavaScript",
+                "tags": [
+                  "LowCode"
+                ]
+              },
+              {
+                "name": "useAuth",
+                "url": "https://github.com/Swizec/useAuth",
+                "description": "让第三方认证变得简单",
+                "language": "TypeScript",
+                "tags": [
+                  "Auth"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

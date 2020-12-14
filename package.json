@@ -1,0 +1,44 @@
+{
+  "name": "github-favorites",
+  "version": "0.0.1-beta.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:watch\" \"npm run dev:doc\"",
+    "dev:watch:TODO": "cliz-hotreload watch data \"npm run build\"",
+    "dev:watch": "chokidar watch \"data/**/*.json\" -c \"npm run build\"",
+    "dev:doc": "dumi dev",
+    "build": "ts-node build/build.ts",
+    "build:doc": "dumi build",
+    "deploy": "npm run build && npm run build:doc && gh-pages -d dist",
+    "upload": "npm run build && git add . && git commit -m \"feat: $(date +%Y-%m-%d)\" && git push origin master",
+    "commit:daily": "git add data && git commit -m 'feat: add '$(date +%Y-%m-%d) && git tag v$(date +%Y.%m.%d)",
+    "publish:daily": "git pull origin master && npm run commit:daily && git push origin master && git push origin v$(date +%Y.%m.%d)",
+    "pd": "npm run publish:daily"
+  },
+  "gitHooks": {
+    "pre-commit": "npm run build && git add README.* && git add data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:whatwewant/github-favorites"
+  },
+  "keywords": [
+    "github"
+  ],
+  "author": "Zero <tobewhatwewant@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cliz/core": "^0.0.9",
+    "@cliz/hotreload": "^0.1.6",
+    "@types/node": "^14.14.5",
+    "@zodash/doreamon": "^0.4.22",
+    "chokidar-cli": "^2.1.0",
+    "concurrently": "^5.3.0",
+    "dumi": "^1.0.34",
+    "gh-pages": "^3.1.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5",
+    "yorkie": "^2.0.0"
+  }
+}

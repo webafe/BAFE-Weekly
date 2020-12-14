@@ -1,0 +1,17 @@
+node_modules/
+lerna-debug.log
+npm-debug.log
+packages/*/lib
+.idea
+package-lock.json
+coverage/
+dist/
+.env
+.DS_Store
+*.log
+scrapyd/
+logs/
+uploads/
+*.tgz
+*:v*
+src/.umi
