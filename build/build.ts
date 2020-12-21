@@ -166,7 +166,7 @@ async function json2Readme(data: Root) {
 ## 周刊
 ${groups.map(group => {
   return `- [第 ${group.id} 期 - ${group.title}](https://github.com/webafe/BAFE-Weekly/blob/master/src/${group.createdAt.replace(/\./g, '-')}.md)`;
-})}`;
+}).join('\n')}`;
 }
 
 async function onError(error) {
