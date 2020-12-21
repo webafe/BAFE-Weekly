@@ -2,8 +2,281 @@
   "title": "前端观察",
   "description": "一步一步向前",
   "data": {
-    "total": 1,
+    "total": 2,
     "data": [
+      {
+        "id": 1,
+        "title": "滴滴 NodeX 生态",
+        "createdAt": "2020.12.21",
+        "editor": "Zero",
+        "content": {
+          "top": {
+            "title": "🔥 本周置顶",
+            "data": [
+              {
+                "name": "滴滴 NodeX 生态",
+                "url": "https://mp.weixin.qq.com/s/x62tkL5bUgbBaRyNwRgxNw",
+                "author": {
+                  "platform": "微信",
+                  "column": "Nodejs技术栈",
+                  "person": "祝云凌"
+                },
+                "summary": "为了让我们历史沉淀的经验能够在集团内铸就更大的价值，并且能够更加完善滴滴Node生态，所以我们成立了NodeX 跨团队 FT，致力于打造滴滴内集团级的专业、高效、稳定的Node研发体系",
+                "tags": [
+                  "技术架构",
+                  "研发体系"
+                ]
+              }
+            ]
+          },
+          "article": {
+            "title": "📘 技术文章",
+            "data": [
+              {
+                "name": "提升网站的加载速度，你选择 Brotli 还是 Gzip？",
+                "url": "https://mp.weixin.qq.com/s/1gzpjpbcseYXEF5pvgt7nw",
+                "author": {
+                  "platform": "微信",
+                  "column": "前端之颠",
+                  "person": "王强（译）"
+                },
+                "summary": "我们大家经常会使用各种压缩方法来提高 Web 应用程序的性能，而 Gzip 是其中最受欢迎的一种。最近，另一种名为 Brotli 的压缩方法开始引起了人们的关注，它似乎已成为了 Gzip 的有力竞争对手。",
+                "tags": [
+                  "CDN",
+                  "Gzip"
+                ]
+              },
+              {
+                "name": "在线 Excel 项目到底有多刺激",
+                "url": "https://mp.weixin.qq.com/s/f1vwzuPryc8ag6nd5Ngr5A",
+                "author": {
+                  "platform": "微信",
+                  "column": "腾讯技术工程",
+                  "person": "被删"
+                },
+                "summary": "在线 Excel 的研发并没有像使用那么简单，实时协同编辑是一个巨大挑战，更大的挑战是每个格子都是一个富文本编辑器。",
+                "tags": [
+                  "协同",
+                  "Excel",
+                  "富文本编辑器"
+                ]
+              },
+              {
+                "name": "LowCode 平台设计原则",
+                "url": "https://github.com/phodal/lowcode",
+                "author": {
+                  "platform": "Github",
+                  "column": "Phodal",
+                  "person": "Phodal"
+                },
+                "summary": "无代码/低代码是一种创建应用的方法，它可以让开发人员使用最少的编码知识，来快速开发应用程序。它可以在图形界面中，使用可视化建模的方式，来组装和配置应用程序。开发人员可以直接跳过所有的基础架构，只关注于使用代码来实现业务逻辑。",
+                "tags": [
+                  "LowCode"
+                ]
+              },
+              {
+                "name": "构建下一代 HTTP API - 零成本抽象做输入输出的校验和正规化",
+                "url": "https://mp.weixin.qq.com/s/7qBjJqBbMWIRQxcrIxfigg",
+                "author": {
+                  "platform": "微信",
+                  "column": "程序人生",
+                  "person": "陈小天"
+                },
+                "summary": "计算机领域有句大俗话，是：Garbage in, garbage out，垃圾进，垃圾出。如果将错误的，无意义的数据输入给一个系统，你也将会得到错误的结果。软件架构领域的先驱者 Mary Shaw 在她的《软件架构》一书里提到，一个系统只有 10% 的代码用于其看得见的目的，而剩下的逻辑都花在处理输入输出，数据校验，数据结构的维护和其它的琐事。",
+                "tags": [
+                  "API",
+                  "标准化",
+                  "数据校验"
+                ]
+              },
+              {
+                "name": "图解跨域请求、反向代理原理，对前端更友好的反向代理服务器 - Caddy",
+                "url": "https://mp.weixin.qq.com/s/SbYD9QrSEoDw7MJkQeE1ww",
+                "author": {
+                  "platform": "微信",
+                  "column": "程序员成长指北",
+                  "person": "晒兜斯"
+                },
+                "summary": "Caddy 是唯一一个在默认情况下自动使用 HTTPS 的 Web 服务器，可以用来完成跨域请求、反向代理、静态文件服务器、部署 History SPA 应用、负载均衡等等功能，在可读性、可维护性和易用性方面都做的很好，对前端更友好！",
+                "tags": [
+                  "反向代理",
+                  "负载均衡"
+                ]
+              },
+              {
+                "name": "开个通用的 HTTP 接口，让前端写 SQL 咋样?",
+                "url": "https://zhuanlan.zhihu.com/p/337185052",
+                "author": {
+                  "platform": "知乎",
+                  "column": "taowen",
+                  "person": "陶文"
+                },
+                "summary": "如何让前端程序员没有后端也能完成项目? 简单概述了 Backend as a \"Database\"。对于前端怎么查询后端并没有详细展开。那么后端是不是应该开个通用的 HTTP 接口，这样前端同学直接写 SQL 就好了呢？最近有一个开源项目 Tencent/APIJSON 就是这么搞的。GraphQL 其实也是差不多...",
+                "tags": [
+                  "API",
+                  "SQL",
+                  "GraphQL"
+                ]
+              },
+              {
+                "name": "使用 CSS Scroll Snap 实现可吸附的滑动容器",
+                "url": "https://ishadeed.com/article/css-scroll-snap/",
+                "author": {
+                  "platform": "掘金",
+                  "column": "凹凸实验室",
+                  "person": "ishadeed"
+                },
+                "summary": "在幻灯片、电话簿、地址簿等场景下常常用到滚动吸附的场景，往往组件都是通过 JS 计算位置然后使用固定或者绝对定位实现，为什么不试试早已成熟的 CSS Scroll Snap 呢？",
+                "tags": [
+                  "CSS",
+                  "吸附"
+                ]
+              },
+              {
+                "name": "Figma + Gitlab CI 一键交付 SVG 多色图标库",
+                "url": "https://mp.weixin.qq.com/s/-aWtVV3nnig_-kHW2h2Pcg",
+                "author": {
+                  "platform": "微信",
+                  "column": "前端早读课",
+                  "person": "印记中文团队"
+                },
+                "summary": "Figma 设计稿中时常有多达上百个 Icon，按照之前的流程，我们需要将图标⼀个个从 Figma 导出，拷⻉⾄项⽬⾥，并对图标代码依次做⼀些改造，以⽀持⼀些定制的功能（如更换颜⾊等），流程冗⻓⽽复杂。在后续的更新维护时，我们每次都需要与设计师核对 icon 的增减修改，并对所有更新的 icon 重复上述流程。这显然不是一个高效可持续的合作方式。",
+                "tags": [
+                  "Icon",
+                  "Figma",
+                  "Gitlab"
+                ]
+              },
+              {
+                "name": "谷歌 CSP 工程化实践导读",
+                "url": "https://mp.weixin.qq.com/s/YOpb8x-3Lp_WomRu-p1dIw",
+                "author": {
+                  "platform": "微信",
+                  "column": "前端瓶子君",
+                  "person": "Wester"
+                },
+                "summary": "内容安全策略（Content Security Policy, 以下简称CSP）是业界主推的前端安全纵深防御方案。针对XSS漏洞及其他前端安全风险，其显著效果，已经在广泛应用中证实。作为CSP规范的核心制定与实践者之一，Google团队在今年的HITB安全会议上进行了题为《A Successful Mess Between Hardening and Mitigation》的分享，其中呈现的数据与经验颇具参考意义。",
+                "tags": [
+                  "CSP",
+                  "前端安全",
+                  "XSS"
+                ]
+              },
+              {
+                "name": "Vue仿探探拖拽卡片的效果",
+                "url": "https://juejin.cn/post/6906143905922678797",
+                "author": {
+                  "platform": "掘金",
+                  "column": "大帅搞全栈",
+                  "person": "大帅搞全栈"
+                },
+                "summary": "类似Tinder和探探的卡片效果的组件，社区中已经非常多了。我这一版除了可以实现和他们一样的效果外。还增加了飞卡的效果，就是类似我的女神邱淑贞这样。可以将卡片朝任意拖拽方向飞出去，必须得帅是不是！",
+                "tags": [
+                  "CSS",
+                  "Animation"
+                ]
+              }
+            ]
+          },
+          "library": {
+            "title": "🛠 工具类库",
+            "data": [
+              {
+                "name": "cleave.js",
+                "url": "https://github.com/nosir/cleave.js",
+                "description": "Web 表单开发之实时输入格式化显示，在输入银行卡、信用卡、金额等场景，实现简单但效果不错",
+                "language": "JavaScript",
+                "tags": [
+                  "格式化"
+                ]
+              },
+              {
+                "name": "directus",
+                "url": "https://github.com/directus/directus",
+                "description": "开源数据平台（Data Platform），类似 Hasura / Firebase，更棒的是它做了完善的 SDK，开发起来就像小程序云开发",
+                "language": "TypeScript",
+                "tags": [
+                  "Data",
+                  "SDK"
+                ]
+              },
+              {
+                "name": "kityminder",
+                "url": "https://github.com/fex-team/kityminder",
+                "description": "百度脑图 - 在线的脑图编辑工具",
+                "language": "JavaScript",
+                "tags": [
+                  "脑图"
+                ]
+              },
+              {
+                "name": "farrow",
+                "url": "https://github.com/Lucifier129/farrow",
+                "description": "函数式风格的 Web 框架，强类型",
+                "language": "TypeScript",
+                "tags": [
+                  "Web",
+                  "Functional"
+                ]
+              },
+              {
+                "name": "meli",
+                "url": "https://github.com/getmeli/meli",
+                "description": "开源的静态网站和前端应用部署平台",
+                "language": "TypeScript",
+                "tags": [
+                  "Deploy",
+                  "发布系统"
+                ]
+              },
+              {
+                "name": "excalidraw",
+                "url": "https://github.com/excalidraw/excalidraw",
+                "description": "一个草稿白板（Whiteboard），适合头脑风暴，这样就不用画笔了",
+                "language": "TypeScript",
+                "tags": []
+              },
+              {
+                "name": "jssh",
+                "url": "https://github.com/leizongmin/jssh",
+                "description": "一款使用JS编写命令行小工具的神器",
+                "language": "Go",
+                "tags": [
+                  "CLI"
+                ]
+              },
+              {
+                "name": "json5",
+                "url": "https://github.com/json5/json5",
+                "description": "面向 Human 的更友好的 JSON 解析实现，支持 JSON 注释 + 键名无引号 + 尾逗号，更像 JavaScript 对象",
+                "language": "JavaScript",
+                "tags": [
+                  "JSON"
+                ]
+              },
+              {
+                "name": "zsh-nvm",
+                "url": "https://github.com/lukechilds/zsh-nvm",
+                "description": "安装、升级、加载 NVM 的 ZSH 插件",
+                "language": "Shell",
+                "tags": [
+                  "ZSH",
+                  "NVM"
+                ]
+              },
+              {
+                "name": "APIJSON",
+                "url": "https://github.com/Tencent/APIJSON",
+                "description": "按需返回指定的 JSON 数据，后端接口和文档自动化，类 GraphQL 面向 UI 按需取数的特性",
+                "language": "Java",
+                "tags": [
+                  "API"
+                ]
+              }
+            ]
+          }
+        }
+      },
       {
         "id": 1,
         "title": "React 入门儿",
