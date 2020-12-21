@@ -2,4 +2,4 @@
 > 一步一步向前
   
 ## 周刊
-- [第 1 期 - 滴滴 NodeX 生态](https://github.com/webafe/BAFE-Weekly/blob/master/src/2020-12-21.md),- [第 1 期 - React 入门儿](https://github.com/webafe/BAFE-Weekly/blob/master/src/2020-12-14.md)
+- [第 2 期 - 滴滴 NodeX 生态](https://github.com/webafe/BAFE-Weekly/blob/master/src/2020-12-21.md),- [第 1 期 - React 入门儿](https://github.com/webafe/BAFE-Weekly/blob/master/src/2020-12-14.md)
