@@ -31,7 +31,7 @@ async function getTagsPath() {
 }
 
 async function generateOneDayMD(date: string, data: Weekly) {
-  const metadata = `第 ${data.id} 期 ${data.title}
+  const metadata = `# 第 ${data.id} 期 ${data.title}
 ---
 
 > 日期：${data.createdAt} 编辑：${data.editor}`;
