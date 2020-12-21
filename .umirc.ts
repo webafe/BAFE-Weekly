@@ -1,6 +1,6 @@
 export default {
-  base: '/webafe/BAFE-Weekly',
-  publicPath: '/webafe/BAFE-Weekly/',
+  base: '/BAFE-Weekly',
+  publicPath: '/BAFE-Weekly/',
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   // 其他配置
   dynamicImport: {},
