@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:watch\" \"npm run dev:doc\"",
     "dev:watch:TODO": "cliz-hotreload watch data \"npm run build\"",
-    "dev:watch": "chokidar watch \"data/**/*.json\" -c \"npm run build\"",
+    "dev:watch": "npm run build:doc && chokidar watch \"data/**/*.json\" -c \"MODE=doc npm run build\"",
     "dev:doc": "dumi dev",
     "build": "ts-node build/build.ts",
-    "build:doc": "dumi build",
+    "build:doc": "MODE=doc npm run build && dumi build",
     "deploy": "npm run build && npm run build:doc && gh-pages -d dist",
     "upload": "npm run build && git add . && git commit -m \"feat: $(date +%Y-%m-%d)\" && git push origin master",
     "commit:daily": "git add data && git commit -m 'feat: add '$(date +%Y-%m-%d) && git tag v$(date +%Y.%m.%d)",

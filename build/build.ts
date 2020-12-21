@@ -7,6 +7,9 @@ import api from '@cliz/core';
 
 import { Weekly, Root, Tag } from './type';
 
+const MODE = process.env.MODE;
+const isDocMode = MODE === 'doc';
+
 const logger = doreamon.logger.getLogger('Build');
 const todayDate = doreamon.date().format('YYYY-MM-DD');
 
@@ -24,6 +27,10 @@ async function getDataJSONPath() {
 
 async function getREADMEPath() {
   return path.resolve(__dirname, '..', 'README.md');
+}
+
+async function getIndexMDPath() {
+  return path.resolve(__dirname, '..', 'src/README.md');
 }
 
 async function getTagsPath() {
@@ -121,6 +128,8 @@ async function updateREADME(_path: string, text: string) {
 
 async function json2Readme(data: Root) {
   const headerFormat = `# {{title}}
+---
+
 > {{description}}`
 //   const dateFormat = `### 第 {{id}} 期 - {{title}}`;
 //   const dataItemFormat = `- [{{name}} - {{author.person}}]({{url}})`;
@@ -161,6 +170,17 @@ async function json2Readme(data: Root) {
   //   content
   // ].join('\n\n');
 
+  console.log('current mode: ', MODE);
+
+  if (isDocMode) {
+    return `${header}
+
+## 周刊
+${groups.map(group => {
+  return `- [第 ${group.id} 期 - ${group.title}](/${group.createdAt.replace(/\./g, '-')})`;
+}).join('\n')}`;
+  }
+
   return `${header}
   
 ## 周刊
@@ -177,6 +197,7 @@ async function main() {
   const dataDirPath = await getDataPath();
   const dataJSONPath = await getDataJSONPath();
   const readmePath = await getREADMEPath();
+  const indexMDPath = await getIndexMDPath();
 
   try {
     logger.info('开始处理...');
@@ -192,6 +213,9 @@ async function main() {
 
     logger.info(`4. 更新 README ... (路径: ${readmePath})`);
     await updateREADME(readmePath, readme);
+
+    logger.info(`5. 更新 index.md ... (路径: ${readmePath})`);
+    await updateREADME(indexMDPath, readme);
 
     // logger.info(`5. 更新 标签 ... (路径: ${await getTagsPath()})`);
     // await updateTags(data);
