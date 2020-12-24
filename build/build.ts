@@ -2,6 +2,7 @@
 import * as path from 'path';
 import * as fs from 'fs';
 import doreamon, { date } from '@zodash/doreamon';
+import * as mkdirp from 'mkdirp';
 
 import api from '@cliz/core';
 
@@ -37,8 +38,16 @@ async function getTagsPath() {
   return path.resolve(__dirname, '..', 'TAGS.json');
 }
 
-async function generateOneDayMD(date: string, data: Weekly) {
-  const metadata = `# 第 ${data.id} 期 ${data.title}
+async function generateOneDayMD(date: string, data: Weekly, index: number) {
+  const metadata = `---
+order: ${index}
+title: 第 ${data.id} 期 ${data.title}
+nav:
+  order: 2
+  title: 周刊
+---
+
+# 第 ${data.id} 期 ${data.title}
 ---
 
 > 日期：${data.createdAt} 编辑：${data.editor}`;
@@ -74,18 +83,18 @@ async function generateDataJSON(dataDir: string): Promise<Root> {
     .filter(f => f.isDir)
     .sort((a, b) => doreamon.date(b.name).valueOf() - doreamon.date(a.name).valueOf());
 
-  const _data = await Promise.all(dirs.map(async dir => {
+  const _data = await Promise.all(dirs.map(async (dir, index) => {
     // const files = (await api.fs.listDir(dir.absolutePath))
     //   .filter(f => !f.isDir)
     //   .filter(f => /\data.json/)
 
     const dataPath = api.path.join(dir.absolutePath, 'data.json');
     const readmePath = api.path.join(dir.absolutePath, 'README.md');
-    const srcReadmePath = api.path.join(__dirname, '../src', `${dir.name}.md`);
+    const srcReadmePath = api.path.join(__dirname, '../src/weekly', `${dir.name}.md`);
     const createdAt = dir.name;
     const metadata = await api.fs.loadJSON(dataPath) as Weekly;
 
-    const oneDayReadmeText = await generateOneDayMD(createdAt, metadata);
+    const oneDayReadmeText = await generateOneDayMD(createdAt, metadata, index);
 
     // await api.fs.writeFile(readmePath, oneDayReadmeText, 'utf8');
     await api.fs.writeFile(srcReadmePath, oneDayReadmeText, 'utf8');
@@ -214,8 +223,8 @@ async function main() {
     logger.info(`4. 更新 README ... (路径: ${readmePath})`);
     await updateREADME(readmePath, readme);
 
-    logger.info(`5. 更新 index.md ... (路径: ${readmePath})`);
-    await updateREADME(indexMDPath, readme);
+    // logger.info(`5. 更新 index.md ... (路径: ${readmePath})`);
+    // await updateREADME(indexMDPath, readme);
 
     // logger.info(`5. 更新 标签 ... (路径: ${await getTagsPath()})`);
     // await updateTags(data);

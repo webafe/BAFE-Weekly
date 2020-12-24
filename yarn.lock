@@ -2759,11 +2759,6 @@
   resolved "https://registry.yarnpkg.com/@zodash/capitalize/-/capitalize-0.1.3.tgz#2a68a0b59f0688187ce7287f679124948f6deb92"
   integrity sha512-jH/vptiq0hfjEG9cMJvwr4Y2w2VfoXYym2kto/KL2JCIsk6L3ZWDTPJvMrByVSdRPYp94aa5XchKboIyZDvOnA==
 
-"@zodash/compose@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@zodash/compose/-/compose-0.1.0.tgz#c4020840f651b5e52463d9df443c548e26de8aa6"
-  integrity sha512-B1HYm115gXKurIAD4s+krVSMQVJUbfSk3fpf0aI4MbdMmSZE1gOnlHTc7166UiE6y1jYzAQqNYcHnU0GDK05/g==
-
 "@zodash/compose@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@zodash/compose/-/compose-0.1.3.tgz#eb74bd174ba89612a6bf595fbd15e5ff3b794607"
@@ -2871,11 +2866,6 @@
   resolved "https://registry.yarnpkg.com/@zodash/find/-/find-0.1.3.tgz#ed04e9c98167d69f9a8210413697f37c744f8752"
   integrity sha512-ktDgbw1li37OO9nvvB7ymkSJuzW4yxhendYFNB/GDhOkqr6N95QFn0ZkeZ1CyQXz8dtipKh2R9Gzjdh43BQgSw==
 
-"@zodash/format@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@zodash/format/-/format-1.2.0.tgz#bd9c2ce7b6091331f665ea8bd6a4ca8bde3cdf77"
-  integrity sha512-o2z2vHMspL4gE6FI4NPfZPRUEOZmhCyjgZoBApVaEqJV6dvMs8jg7LcRhtwYpk4stQXMi/83Ec3KokOwRnRMIw==
-
 "@zodash/format@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@zodash/format/-/format-1.2.3.tgz#d463c7da00647dba2eecc881510ab60665a78d55"
@@ -2919,15 +2909,6 @@
   resolved "https://registry.yarnpkg.com/@zodash/load-script/-/load-script-0.1.5.tgz#55eb84266330a5f8ff434e841da9fc5707326fbe"
   integrity sha512-K1g72zyuphc5Dp2gT2u4eRyl+XFPIApS8O9y3x55sLdy5Iv/q1XCYaYyZN00SeYPrYF15OlpcFCrcANunmAczA==
 
-"@zodash/logger@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@zodash/logger/-/logger-0.2.0.tgz#1833daa6a2ead63d32c0c7bf71920df65163ab68"
-  integrity sha512-iePtBPOfdCCM4vHG4MRKbajnPOsAWm5F82tkQTKC88l9Z36Cvm3doXCBMymWLiRsqXQzUeQk9tdEFKPAoC2jAA==
-  dependencies:
-    "@zcorky/moment" "^1.0.12"
-    "@zodash/format" "^1.2.0"
-    "@zodash/onion" "^0.1.0"
-
 "@zodash/logger@^0.2.11":
   version "0.2.11"
   resolved "https://registry.yarnpkg.com/@zodash/logger/-/logger-0.2.11.tgz#aab3fba608572e3d6e910bff03a7f7a71da2d3a4"
@@ -2966,13 +2947,6 @@
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@zodash/once/-/once-0.1.3.tgz#485b729813780fb141ba4dde5742f714e363de83"
   integrity sha512-m0yFh0Bzj1HxtKJpziIJifglsYmrChYVROp6DmLXhgyHBQjXjtbWTitCIeYIRw8x8MtrrRVDARr5eUe+pgmn6Q==
-
-"@zodash/onion@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@zodash/onion/-/onion-0.1.0.tgz#b78e2149d46705516702428baeebdaaccd63c75d"
-  integrity sha512-whHq5h6yA0JBAE4QHCT/sEUedWcYFKRxRqGSw9SlHOBYeTUPBVnKItJUD6YY4nmoQ2SbxKeapT5+2/+Y6V4Qqg==
-  dependencies:
-    "@zodash/compose" "^0.1.0"
 
 "@zodash/onion@^0.1.3":
   version "0.1.3"
