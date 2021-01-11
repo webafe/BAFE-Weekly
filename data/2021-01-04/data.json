@@ -1,0 +1,221 @@
+{
+  "id": 4,
+  "title": "2020 前端回顾解读",
+  "createdAt": "2020.01.04",
+  "editor": "Zero",
+  "content": {
+    "top": {
+      "title": "🔥 本周置顶",
+      "data": [
+        {
+          "name": "解读前端的2020：一直走在“变化”的路上",
+          "url": "https://mp.weixin.qq.com/s/62ys-BOJgMKyFg6_QKrXZQ",
+          "author": {
+            "platform": "微信",
+            "column": "前端之颠",
+            "person": "田晓旭"
+          },
+          "summary": "回顾 2020 年，前端领域发生了哪些让人印象深刻的事情；展望 2021 年，前端领域又有哪些值得期待的新趋势。InfoQ 采访了腾讯前端技术专家 / 总监、IVWEB 团队负责人刘恒兵（河伯），苏宁消费者平台研发中心前端技术总监禹立彬，阿里云智能云原生中间件前端负责人寒斜，请他们分享观点、解读趋势",
+          "tags": [
+            "趋势"
+          ]
+        }
+      ]
+    },
+    "article": {
+      "title": "📘 技术文章",
+      "data": [
+        {
+          "name": "一份不可多得的 TypeScript 学习指南",
+          "url": "https://mp.weixin.qq.com/s/aCJMArlnPsWOK4nGb5nBoQ",
+          "author": {
+            "platform": "微信",
+            "column": "前端大全",
+            "person": "阿宝哥"
+          },
+          "summary": "阿宝哥第一次使用 TypeScript 是在 Angular 2.x 项目中，那时候 TypeScript 还没有进入大众的视野。然而现在学习 TypeScript 的小伙伴越来越多了，本文阿宝哥将从 16 个方面入手，带你一步步学习 TypeScript",
+          "tags": [
+            "TypeScript"
+          ]
+        },
+        {
+          "name": "什么是WebAuthn：在 Web 上使用 Touch ID 和 Windows Hello 登录",
+          "url": "https://mp.weixin.qq.com/s/dNqmqorX-HsKZK860WAsiQ",
+          "author": {
+            "platform": "微信",
+            "column": "前端全栈开发者",
+            "person": "张张"
+          },
+          "summary": "对你的网站启用TouchID和Windows Hello身份验证。WebAuthn简介：它如何工作以及如何实现",
+          "tags": [
+            "Auth",
+            "WebAuthn"
+          ]
+        },
+        {
+          "name": "如何基于心智模型打造更棒的用户体验",
+          "url": "https://mp.weixin.qq.com/s/HX8zhHIE-V7SFgJrGyrN8A",
+          "author": {
+            "platform": "微信",
+            "column": "前端早读课",
+            "person": "Chor"
+          },
+          "summary": "想要和你的用户保持意见上的一致吗？那么你必须了解他们的心智模型。本文将针对此话题，探讨一些最佳实践和案例，助你快速入门。提升用户体验的关键是什么？当然是了解用户的想法 —— 就这么简单。在心理学上，我们用心智模型这一术语来描述用户对某个概念或者流程的思考模式",
+          "tags": [
+            "用户体验"
+          ]
+        },
+        {
+          "name": "闲庭信步聊前端 - 见微知著微前端",
+          "url": "https://mp.weixin.qq.com/s/GiIh6bgOsL0vmghne4B2vA",
+          "author": {
+            "platform": "微信",
+            "column": "大转转FE",
+            "person": "大转转FE"
+          },
+          "summary": "笔者初次接触微前端在2020年7月，是从同事的口中听说的。虽然不算是一个早期接触者，但是也确实的推动和跟进了内部某大型项目的开发和落地。也希望能把一些走过的坑和一些思考分享给大家",
+          "tags": [
+            "微前端"
+          ]
+        },
+        {
+          "name": "React Fiber 是如何实现更新过程可控的",
+          "url": "https://mp.weixin.qq.com/s/i6xbbIEZC9p4gNl505PKqg",
+          "author": {
+            "platform": "微信",
+            "column": "政采云前端团队",
+            "person": "赤墨"
+          },
+          "summary": "从 React 16 开始，React 采用了 Fiber 机制替代了原先基于原生执行栈递归遍历 VDOM 的方案，提高了页面渲染性能和用户体验。乍一听 Fiber 好像挺神秘，在原生执行栈都还没搞懂的情况下，又整出个 Fiber，还能不能愉快的写代码了。别慌，老铁！下面就来唠唠关于 Fiber 那点事儿",
+          "tags": [
+            "Fiber"
+          ]
+        },
+        {
+          "name": "如何设计并搭建一个非常优秀的前端UI组件库？",
+          "url": "https://mp.weixin.qq.com/s/1OcyqO2bEotGpSmO_gvhxgA",
+          "author": {
+            "platform": "微信",
+            "column": "前端印象",
+            "person": "翰锅锅"
+          },
+          "summary": "面对不断变化且业务上升，一套优秀的 UI 组件库是必不可少的，它可以提高团队的业务开发效率、可维护性、友好且统一的交互等",
+          "tags": [
+            "组件库"
+          ]
+        },
+        {
+          "name": "使用 MonoRepo 管理前端项目",
+          "url": "https://mp.weixin.qq.com/s/GzwABWH8GXYVp9X1zhz9lA",
+          "author": {
+            "platform": "微信",
+            "column": "奇舞精选",
+            "person": "尹光耀"
+          },
+          "summary": "在工作中，我们可能会遇到一些项目管理方面的问题。在单个项目管理的时候，大家都知道该怎么管理。一旦涉及到多个项目管理，很多人就不一定能够管理好了",
+          "tags": [
+            "MonoRepo"
+          ]
+        },
+        {
+          "name": "漫画：通俗易懂负载均衡器",
+          "url": "https://mp.weixin.qq.com/s/dndFo8ENdeNayN4pv1ZRnQ",
+          "author": {
+            "platform": "微信",
+            "column": "Nodejs技术栈",
+            "person": "王延飞（译）"
+          },
+          "summary": "你可能已经多次听说过Load Balancer（此负载均衡器）。负载均衡基本上意味着在多个服务器之间分配网络流量，这样可以确保没有任何一台服务器自己承担所有负载。当网络流量平衡时，应用程序就可以平稳运行",
+          "tags": [
+            "负载均衡"
+          ]
+        },
+        {
+          "name": "你还在用 REST API 吗？",
+          "url": "https://www.infoq.cn/article/Q8Y5YJVRYEzWJcpkjByL",
+          "author": {
+            "platform": "微信",
+            "column": "InfoQ",
+            "person": "刘雅梦（译）"
+          },
+          "summary": "通过 HTTP 发送数据，许多开发人员已经在用 REST 了，而 GraphQL 通常被认为是一种代替遗留 REST API 的技术。本文将对比两者各自的优势、劣势以及它们之间的差异，希望能为你今后项目的技术选型提供帮忙",
+          "tags": [
+            "API",
+            "RESTful"
+          ]
+        },
+        {
+          "name": "最全面的 Node.js 资源汇总推荐 - awesome-nodejs",
+          "url": "https://mp.weixin.qq.com/s/Bg-eYyHJ35CfRKUS4Eqruw",
+          "author": {
+            "platform": "微信",
+            "column": "Nodejs技术栈",
+            "person": "前哨君"
+          },
+          "summary": "awesome-nodejs 是sindresorhus发起维护的 Node.js 资源列表，内容包括：命令行工具、日志、调试、HTTP、构建工具、文件系统、模板、Web 框架、流程控制、文本、图片和数据校验等",
+          "tags": []
+        }
+      ]
+    },
+    "library": {
+      "title": "🛠 工具类库",
+      "data": [
+        {
+          "name": "react-worker-components",
+          "url": "https://github.com/dai-shi/react-worker-components",
+          "description": "让 React 组件用 WebWorker 处理，一个新的尝试方案",
+          "language": "TypeScript",
+          "tags": [
+            "WebWorker"
+          ]
+        },
+        {
+          "name": "react-draft-wysiwyg",
+          "url": "https://github.com/jpuri/react-draft-wysiwyg",
+          "description": "基于 DraftJS + React 的富文本编辑器",
+          "language": "JavaScript",
+          "tags": [
+            "Editor",
+            "富文本编辑器"
+          ]
+        },
+        {
+          "name": "wedding",
+          "url": "https://github.com/iammapping/wedding",
+          "description": "婚礼大屏互动，微信请柬一站式解决方案",
+          "language": "JavaScript",
+          "tags": [
+            "弹幕"
+          ]
+        },
+        {
+          "name": "next-terminal",
+          "url": "https://github.com/dushixiang/next-terminal",
+          "description": "Next Terminal是使用Golang和React开发的一款HTML5的远程桌面网关，具有小巧、易安装、易使用、资源占用小的特点，支持RDP、SSH、VNC和Telnet协议的连接和管理",
+          "language": "JavaScript",
+          "tags": [
+            "远程桌面"
+          ]
+        },
+        {
+          "name": "planner",
+          "url": "https://github.com/alainm23/planner",
+          "description": "Linux 平台处理待办事项（Todos）的桌面软件，功能很强，界面设计很棒",
+          "language": "Vala",
+          "tags": [
+            "TODO"
+          ]
+        },
+        {
+          "name": "react-dev-inspector",
+          "url": "https://github.com/zthxxx/react-dev-inspector",
+          "description": "点击浏览器的 React 组件自动跳转到 IDE 代码中，支持 Webpack / Umi",
+          "language": "TypeScript",
+          "tags": [
+            "Devtools"
+          ]
+        }
+      ]
+    }
+  }
+}
