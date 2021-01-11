@@ -1,0 +1,226 @@
+{
+  "id": 5,
+  "title": "布局研发新基建",
+  "createdAt": "2020.01.11",
+  "editor": "Zero",
+  "content": {
+    "top": {
+      "title": "🔥 本周置顶",
+      "data": [
+        {
+          "name": "凹凸技术揭秘 · Tide 研发平台 · 布局研发新基建",
+          "url": "https://mp.weixin.qq.com/s/7lMyU5l4EzzRYK4l6bVYmA",
+          "author": {
+            "platform": "微信",
+            "column": "凹凸实验室",
+            "person": "小助手"
+          },
+          "summary": "一个项目的完整生命周期一般包括：项目创建，代码开发，测试，部署发布，以及后期的监控。作为一个多端解决方案，Taro 有效提升了多端应用的开发效率，但对于开发以外的环节就无能为力了。如何提升研发流程整体的效率？技术先驱们早已给出了答案：Integrated Development Environment（集成开发环境），也就是通常说的 IDE",
+          "tags": [
+            "IDE"
+          ]
+        }
+      ]
+    },
+    "article": {
+      "title": "📘 技术文章",
+      "data": [
+        {
+          "name": "2021再看Deno（关于CDN for JavaScript modules的思考）",
+          "url": "https://mp.weixin.qq.com/s/EzmNQ_oqxUuPQFfZYJWDzA",
+          "author": {
+            "platform": "微信",
+            "column": "Node全栈",
+            "person": "Node全栈"
+          },
+          "summary": "无疑，deno改变了大家的对包管理的看法。本身deno够小，试错成本低，它确确实实引领了一个潮流方向。这个改进虽说不算新，但反响确实很好，大概是天下人苦npm（npm开玩笑的说法是：你怕吗）久已，用法简单，高效，甚至是衍生出很多关于CDN for JavaScript modules的思考",
+          "tags": [
+            "Deno"
+          ]
+        },
+        {
+          "name": "是时候跟 Docker 说再见了",
+          "url": "https://mp.weixin.qq.com/s/hqoT6EtZNsKrekr_-IsEaA",
+          "author": {
+            "platform": "微信",
+            "column": "InfoQ",
+            "person": "王者（译）"
+          },
+          "summary": "在容器的远古时代 (差不多就是 4 年前)，Docker 是这场游戏的唯一玩家。但现在情况已经不一样了，Docker 不再是唯一玩家，而只是一个容器引擎而已。我们可以用 Docker 构建、运行、拉取、推送或检查容器镜像，但对于这里的每一项任务，都有其他可替代的工具，它们可能比 Docker 做得更好。所以，让我们来探究一下它们，然后卸载和忘掉 Docker…",
+          "tags": [
+            "Docker"
+          ]
+        },
+        {
+          "name": "使用 Node.js 搭建一个 API 网关(助力微服务)",
+          "url": "https://mp.weixin.qq.com/s/RETvB7HXTgypP8-NZ2P11g",
+          "author": {
+            "platform": "微信",
+            "column": "Nodejs技术栈",
+            "person": "koala"
+          },
+          "summary": "外部客户端访问微服务架构中的服务时，服务端会对认证和传输有一些常见的要求。API 网关提供共享层来处理服务协议之间的差异，并满足特定客户端（如桌面浏览器、移动设备和老系统）的要求",
+          "tags": [
+            "APIGateway"
+          ]
+        },
+        {
+          "name": "dumi 1.1 发布，你更好用的组件研发利器",
+          "url": "https://www.zhihu.com/column/p/340845825",
+          "author": {
+            "platform": "知乎",
+            "column": "*",
+            "person": "肖胜桃"
+          },
+          "summary": "dumi 1.0 是今年的 3 月 2 日发布的，到现在已经过去了 304 天。在这期间，dumi 已经成为 700+ 社区项目的组件库研发/文档编写工具，将近 10k 的 npm 包月下载量，收到了近 300 的 issue 反馈、150+ 的 PRs，有了数不清的不断帮助 dumi 做改进和优化的小伙伴，感谢大家对 dumi 的支持；在这期间，通过不断地收集反馈、规划功能、迭代研发，我们也准备好了全新的 dumi 1.1 版本，在 2021 年的前夕，和大家分享",
+          "tags": [
+            "Umi"
+          ]
+        },
+        {
+          "name": "如何开发一款 H5 小程序直播？",
+          "url": "https://mp.weixin.qq.com/s/MxUjrVNtld63X701P_84Wg",
+          "author": {
+            "platform": "微信",
+            "column": "前端大全",
+            "person": "隐冬"
+          },
+          "summary": "如果只会ES6,Vue，React, Webpack这只能算是前端，大前端是至少要掌握上面的一项技能的。这篇文章就是介绍大前端领域中的视频直播。本文主要讲述的是H5前端部分，视频音频采集部分后面会但开篇章来讲。首先带领大家快速实现一个直播系统，然后再讲解其中的重要概念，话不多说，直接开撸",
+          "tags": [
+            "直播"
+          ]
+        },
+        {
+          "name": "在 Web 应用中减少CORS预检时间的4种方法",
+          "url": "https://mp.weixin.qq.com/s/WqCgnpFgJsy0AJlVU-uRHQ",
+          "author": {
+            "platform": "微信",
+            "column": "前端早读课",
+            "person": "排骨"
+          },
+          "summary": "减少CORS的负面影响，以提高性能。跨源资源共享（CORS）是网络浏览器和网络服务器之间的跨源协议。这个协议允许服务器决定哪些资源可以在它的托管域/子域之外访问，并指示浏览器遵循规则",
+          "tags": [
+            "CORS"
+          ]
+        },
+        {
+          "name": "凹凸技术揭秘 · Tide 研发平台 · 布局研发新基建",
+          "url": "https://mp.weixin.qq.com/s/7lMyU5l4EzzRYK4l6bVYmA",
+          "author": {
+            "platform": "微信",
+            "column": "凹凸实验室",
+            "person": "小助手"
+          },
+          "summary": "一个项目的完整生命周期一般包括：项目创建，代码开发，测试，部署发布，以及后期的监控。作为一个多端解决方案，Taro 有效提升了多端应用的开发效率，但对于开发以外的环节就无能为力了。如何提升研发流程整体的效率？技术先驱们早已给出了答案：Integrated Development Environment（集成开发环境），也就是通常说的 IDE",
+          "tags": [
+            "IDE"
+          ]
+        },
+        {
+          "name": "带你实现完整的视频弹幕系统",
+          "url": "https://mp.weixin.qq.com/s/0JrjT8x7XoamLwK23XWaUw",
+          "author": {
+            "platform": "微信",
+            "column": "掘金开发者社区",
+            "person": "视频团队刘小壮"
+          },
+          "summary": "弹幕诞生于日本的视频平台，后来被B站这种短视频平台引入到国内，并在国内发展壮大。后来逐渐被长视频平台所接受，现在视频相关的应用基本上都会有弹幕。但是长视频弹幕和B站这类的短视频弹幕还不太一样，短视频平台有自己特有的弹幕文化，所以弹幕更注重和用户的互动。长视频平台还是以看剧为主，弹幕类似于评论的功能，所以不能影响用户看剧，弹幕不能太密集，而且相互之间最好不要有遮盖，否则会对视频内容会有比较明显的影响。本篇文章主要从长视频平台的角度来讲弹幕的实现原理，但其实短视频平台的弹幕也是同样的原理，区别在于短视频可能弹幕种类会多一些。",
+          "tags": [
+            "弹幕"
+          ]
+        },
+        {
+          "name": "前端的Nginx知识梳理",
+          "url": "https://mp.weixin.qq.com/s/ZxipNgvzWY6xm_-r5HyqhA",
+          "author": {
+            "platform": "微信",
+            "column": "掘金开发者社区",
+            "person": "黑色的枫"
+          },
+          "summary": "因为开发中有很多环境，开发环境，测试环境，预生产环境等，所以会经常会用到 nginx 来配置代理。但是我也只是会用，想仔细梳理一下 nginx 的知识",
+          "tags": [
+            "Nginx"
+          ]
+        },
+        {
+          "name": "4种主流的API架构风格对比",
+          "url": "https://mp.weixin.qq.com/s/GLgWqKQfDR_EhdRdadqh_Q",
+          "author": {
+            "platform": "微信",
+            "column": "InfoQ",
+            "person": "朱琪珊（译）"
+          },
+          "summary": "本文讨论了四种主要的 API 架构风格，比较它们的优缺点，并重点介绍每种情况下最适合的 API 架构风格",
+          "tags": [
+            "API"
+          ]
+        },
+        {
+          "name": "我在阿里写代码学会的六件事",
+          "url": "https://mp.weixin.qq.com/s/u6WTtF47pNjdDSml2awM7Q",
+          "author": {
+            "platform": "微信",
+            "column": "OSC开源社区",
+            "person": "Chen, Guodong"
+          },
+          "summary": "在这样的情况下是非常容易欠下技术债的，时间长了，这样的代码基本上无法维护，只能推倒重来，这个成本是非常高的。欠债要还，只是迟早的问题，并且等到要还的时候还要赔上额外的不菲的利息。还债的有可能是自己，也有可能是后来的继任者，但都是团队在还债。所以从团队的角度来看，写好代码是一件非常有必要的事情。如何写出干净优雅的代码是个很困难的课题，我没有找到万能的 solution，更多的是一些 trade off，可以稍微讨论一下",
+          "tags": [
+            "经验之谈"
+          ]
+        }
+      ]
+    },
+    "library": {
+      "title": "🛠 工具类库",
+      "data": [
+        {
+          "name": "jsoneditor-react",
+          "url": "https://github.com/vankop/jsoneditor-react",
+          "description": "React JSON 编辑器",
+          "language": "JavaScript",
+          "tags": [
+            "Editor",
+            "JSON"
+          ]
+        },
+        {
+          "name": "Drawflow",
+          "url": "https://github.com/jerosoler/Drawflow",
+          "description": "一个强大的流程图工具",
+          "language": "JavaScript",
+          "tags": [
+            "Editor",
+            "Flow"
+          ]
+        },
+        {
+          "name": "gdom",
+          "url": "https://github.com/syrusakbary/gdom",
+          "description": "基于 GraphQL 的爬虫，思路不错",
+          "language": "Python",
+          "tags": [
+            "爬虫"
+          ]
+        },
+        {
+          "name": "CSS-Inspiration",
+          "url": "https://github.com/chokcoco/CSS-Inspiration",
+          "description": "在这里找到写 CSS 的灵感，有助于深入理解和实践",
+          "language": "CSS",
+          "tags": [
+            
+          ]
+        },
+        {
+          "name": "dnd-kit",
+          "url": "https://github.com/clauderic/dnd-kit",
+          "description": "适用于 React 的 DnD 工具箱，帮助你快速构建可拖拽应用，相比于 react-beautiful-dnd 轻量且可自定义",
+          "language": "TypeScript",
+          "tags": [
+            "DnD"
+          ]
+        }
+      ]
+    }
+  }
+}
